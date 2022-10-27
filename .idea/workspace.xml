@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96ab41c0-f62f-473e-bdbe-a4568380fd9c" name="Changes" comment="Navbar update + search inline :D">
+    <list default="true" id="96ab41c0-f62f-473e-bdbe-a4568380fd9c" name="Changes" comment="Not sure what this one is.">
+      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScarletAuction/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScarletAuction/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScarletAuction/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScarletAuction/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/homepage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,15 +33,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/djangoProject"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Geanina/PycharmProjects/djangoProject&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ScarletAuction" type="Python.DjangoServer" factoryName="Django server">
       <module name="ScarletAuction" />
@@ -96,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666719066549</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Not sure what this one is.">
+      <created>1666719216736</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666719216736</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

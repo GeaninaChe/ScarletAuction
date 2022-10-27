@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'intro',
+    'userextend',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_HOST = 'mail.horiascurtu.ro'
+EMAIL_HOST_USER = 'thebestgroupro29@horiascurtu.ro'
+EMAIL_HOST_PASSWORD = 'Django1234!'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
