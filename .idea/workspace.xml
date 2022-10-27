@@ -107,7 +107,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666892946342</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="sign up created">
+      <created>1666892990516</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666892990516</updated>
+    </task>
+    <task id="LOCAL-00007" summary="sign up created">
+      <created>1666893071043</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666893071043</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
