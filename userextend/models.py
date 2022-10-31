@@ -8,7 +8,7 @@ class UserExtend(User):
     phone = models.CharField(max_length=10)
     gender_options = (('male', 'Male'), ('female', 'Female'), ('other', 'Other'))
     birthday = models.DateField()
-    # account_type_options = (('buyer', 'Buyer'), ('seller', 'Seller'))
+    account_options = (('buyer', 'Buyer'), ('seller', 'Seller'))
     gender = models.CharField(choices=gender_options, max_length=6)
 
 
