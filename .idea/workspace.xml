@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="96ab41c0-f62f-473e-bdbe-a4568380fd9c" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/ScarletAuction.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ScarletAuction.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a6b664cf-e8ad-4da6-8f66-7664ccba1fa7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a6b664cf-e8ad-4da6-8f66-7664ccba1fa7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2022_18_27__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2022_18_27__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_10_2022_18_14__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_10_2022_18_14__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userextend/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/userextend/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userextend/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/userextend/models.py" afterDir="false" />
     </list>
@@ -21,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -42,9 +39,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/ScarletAuction"
+    "last_opened_file_path": "C:/djangoProject"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ScarletAuction" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="ScarletAuction" type="Python.DjangoServer" factoryName="Django server">
       <module name="ScarletAuction" />
@@ -81,7 +83,8 @@
       <updated>1666629276098</updated>
       <workItem from="1666629278011" duration="10951000" />
       <workItem from="1666711379623" duration="25000" />
-      <workItem from="1667240078784" duration="1680000" />
+      <workItem from="1667240078784" duration="2012000" />
+      <workItem from="1667319479127" duration="2968000" />
     </task>
     <task id="LOCAL-00001" summary="Navbar update + search inline :D">
       <created>1666643505655</created>
@@ -139,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666894362175</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1667242068030</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667242068030</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

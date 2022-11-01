@@ -9,7 +9,7 @@ from userextend.models import UserExtend
 class UserExtendForm(UserCreationForm): #sign up
     class Meta:
         model = UserExtend
-        fields = ['first_name', 'last_name', 'email', 'username', 'gender', 'birthday', 'phone']
+        fields = ['first_name', 'last_name', 'email', 'username', 'gender', 'birthday', 'account', 'phone']
 
         widgets = {
             'first_name': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your first name'}),
@@ -18,7 +18,7 @@ class UserExtendForm(UserCreationForm): #sign up
             'username': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your username'}),
             'gender': Select(attrs={'class': 'form-control'}),
             'birthday': DateInput(attrs={'class': 'form-control', 'type': 'date'}),
-            # 'account': Select(attrs={'class': 'form-control'}),
+            'account': Select(attrs={'class': 'form-control'}),
             'phone': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your phone number'}),
         }
 

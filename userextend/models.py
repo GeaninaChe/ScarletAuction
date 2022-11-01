@@ -4,12 +4,14 @@ from django.db import models
 
 class UserExtend(User):
 
+    gender_options = (('male', 'Male'), ('female', 'Female'), ('other', 'Other'))
+    account_options = (('buyer', 'Buyer'), ('seller', 'Seller'))
+
     email_confirmation = models.EmailField(max_length=30)
     phone = models.CharField(max_length=10)
-    gender_options = (('male', 'Male'), ('female', 'Female'), ('other', 'Other'))
     birthday = models.DateField()
-    account_options = (('buyer', 'Buyer'), ('seller', 'Seller'))
     gender = models.CharField(choices=gender_options, max_length=6)
+    account = models.CharField(choices=account_options, max_length=6, null=True)
 
 
     def __str__(self):
