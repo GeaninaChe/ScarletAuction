@@ -9,7 +9,7 @@ from userextend.models import UserExtend
 class UserExtendForm(UserCreationForm): #sign up
     class Meta:
         model = UserExtend
-        fields = ['first_name', 'last_name', 'email', 'username', 'gender', 'birthday', 'account', 'phone']
+        fields = ['first_name', 'last_name', 'email', 'username','gender','birthday', 'account','phone']
 
         widgets = {
             'first_name': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your first name'}),
@@ -32,6 +32,14 @@ class UserExtendForm(UserCreationForm): #sign up
 
 class AuthenticationNewForm(AuthenticationForm): #log in
 
+    class Meta:
+        model = UserExtend
+        fields = ['username', 'email']
+
+        widgets = {
+            'username': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your username'}),
+            'email': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your email'}),
+        }
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['username'].widget.attrs.update({'class': 'form-control', 'placeholder': 'Please enter your username'})
