@@ -7,7 +7,9 @@ class UserExtend(User):
     gender_options = (('male', 'Male'), ('female', 'Female'), ('other', 'Other'))
     account_options = (('buyer', 'Buyer'), ('seller', 'Seller'))
 
-    email_confirmation = models.EmailField(max_length=30)
+    firstname = models.CharField(max_length=20, blank=False)
+    lastname = models.CharField(max_length=20, blank=False)
+    email_address = models.EmailField(max_length=30)
     phone = models.CharField(max_length=10)
     birthday = models.DateField(null=True, blank=True)
     gender = models.CharField(choices=gender_options, max_length=6, null=True)

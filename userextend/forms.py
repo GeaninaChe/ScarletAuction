@@ -9,13 +9,13 @@ from userextend.models import UserExtend
 class UserExtendForm(UserCreationForm): #sign up
     class Meta:
         model = UserExtend
-        fields = ['first_name', 'last_name', 'email', 'username','gender','birthday', 'account','phone']
+        fields = ['first_name', 'last_name', 'email_address', 'gender', 'birthday', 'account', 'phone']
 
         widgets = {
             'first_name': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your first name'}),
             'last_name': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your last name'}),
-            'email': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your email'}),
-            'username': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your username'}),
+            'email_address': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your email'}),
+            # 'username': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your username'}),
             'gender': Select(attrs={'class': 'form-control'}),
             'birthday': DateInput(attrs={'class': 'form-control', 'type': 'date'}),
             'account': Select(attrs={'class': 'form-control'}),
