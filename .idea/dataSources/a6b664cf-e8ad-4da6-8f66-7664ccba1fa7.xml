@@ -1772,36 +1772,34 @@ model</ColNames>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="587" parent="494" name="phone">
-      <DataType>varchar(10)|0s</DataType>
-      <NotNull>1</NotNull>
+    <column id="587" parent="494" name="firstname">
+      <DataType>varchar(20)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="588" parent="494" name="birthday">
-      <DataType>date|0s</DataType>
-      <Position>3</Position>
-    </column>
-    <column id="589" parent="494" name="gender">
-      <DataType>varchar(6)|0s</DataType>
-      <Position>4</Position>
-    </column>
-    <column id="590" parent="494" name="account">
-      <DataType>varchar(6)|0s</DataType>
-      <Position>5</Position>
-    </column>
-    <column id="591" parent="494" name="email_address">
+    <column id="588" parent="494" name="email_address">
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="589" parent="494" name="phone">
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="590" parent="494" name="birthday">
+      <DataType>date|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="591" parent="494" name="gender">
+      <DataType>varchar(6)|0s</DataType>
       <Position>6</Position>
     </column>
-    <column id="592" parent="494" name="firstname">
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
+    <column id="592" parent="494" name="account">
+      <DataType>varchar(6)|0s</DataType>
       <Position>7</Position>
     </column>
     <column id="593" parent="494" name="lastname">
       <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
     <foreign-key id="594" parent="494">
