@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96ab41c0-f62f-473e-bdbe-a4568380fd9c" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change afterPath="$PROJECT_DIR$/artobjects/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cars/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clothes/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jewelery/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/artobjects/artobjects.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cars/cars.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/clothes/clothes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/jewelery/jewelery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_10_2022_18_14__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScarletAuction/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScarletAuction/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScarletAuction/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScarletAuction/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userextend/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/userextend/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userextend/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/userextend/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +87,7 @@
       <workItem from="1667240078784" duration="2012000" />
       <workItem from="1667319479127" duration="2968000" />
       <workItem from="1667322675967" duration="3101000" />
-      <workItem from="1667498493415" duration="10875000" />
+      <workItem from="1667498493415" duration="11894000" />
     </task>
     <task id="LOCAL-00001" summary="Navbar update + search inline :D">
       <created>1666643505655</created>
@@ -180,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667501330475</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1667847124906</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667847124906</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

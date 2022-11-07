@@ -21,7 +21,6 @@ from userextend.forms import AuthenticationNewForm, PasswordResetNewForm, SetPas
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
-    path('', include('intro.urls')),
     path('', include('userextend.urls')),
     path("login/", views.LoginView.as_view(form_class=AuthenticationNewForm), name="login"),
     path('', include('django.contrib.auth.urls')),
@@ -29,4 +28,5 @@ urlpatterns = [
     path('', include('cars.urls')),
     path('', include('clothes.urls')),
     path('', include('jewelery.urls')),
+    path("password_reset/", views.PasswordResetView.as_view(form_class=PasswordResetNewForm), name="password_reset"),
 ]
