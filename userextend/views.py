@@ -30,7 +30,7 @@ class UserCreateView(CreateView):
                 'full_name': new_user,
                 'username': new_user.username
             }
-            # subject = 'Created a  new account!'
+            # subject = 'Created a new account!'
             # message = get_template('userextend/mail_create_new_user.html').render(details_user)
             # from_email = EMAIL_HOST_USER
             # email_to = [new_user.email]
@@ -45,7 +45,8 @@ class AuthenticationNewForm(AuthenticationForm):
     template_name = 'userextend/login.html'
     model = UserExtend
     form_class = UserExtendForm
-    def login_request(self,request):
+
+    def login_request(self, request):
         if request.method == 'POST':
             form = AuthenticationForm(request, data=request.POST)
             if form.is_valid():
