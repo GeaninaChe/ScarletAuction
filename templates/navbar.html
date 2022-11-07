@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg" style="background-color: rgba(220,44,21,0.68);">
+<nav class="navbar navbar-expand-lg" style="background-color: rgba(0,198,139,0.48);">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Scarlet Auction</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -76,120 +76,20 @@
 
             </ul>
 
-{#                <div class="btn-group">#}
-{#                    <button type="button" class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown"#}
-{#                            aria-expanded="false">#}
-{#                        My profile#}
-{#                    </button>#}
-{#                    <ul class="dropdown-menu">#}
-{#                        <li><a class="dropdown-item" href="#">Change password</a></li>#}
-{#                        <li><a class="dropdown-item" href="#">Logout</a></li>#}
-{#                    </ul>#}
-{#                </div>#}
+            <form class="form-inline my-2 my-lg-0 me-2">
+                <div class="input-group">
+                    <input class="form-control mr-sm-2" id="address-bar" type="search" placeholder="Search"
+                           aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </div>
+            </form>
 
-                <form class="form-inline my-2 my-lg-0 me-2">
-                    <div class="input-group">
-                        <input class="form-control mr-sm-2" id="address-bar" type="search" placeholder="Search"
-                               aria-label="Search">
-                        <button class="btn btn-outline-dark" type="submit">Search</button>
-                    </div>
-                </form>
+            <a href="{% url 'login' %}" class="btn btn-outline-success me-2">Login</a>
+            <a href="{% url 'sign-up' %}" class="btn btn-outline-secondary">Sign up</a>
 
-                <a href="{% url 'login' %}" class="btn btn-outline-success me-2">Login</a>
-                <a href="{% url 'sign-up' %}" class="btn btn-outline-secondary">Sign up</a>
 
         </div>
     </div>
 </nav>
-
-
-{#<nav class="navbar navbar-expand-lg" style="background-color: #fde3e9;">#}
-{#    <div class="container-fluid">#}
-{#        <a class="navbar-brand" href="#">Scarlet Auction</a>#}
-{#        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"#}
-{#                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">#}
-{#            <span class="navbar-toggler-icon"></span>#}
-{#        </button>#}
-{#        <div class="collapse navbar-collapse" id="navbarSupportedContent">#}
-{#            <ul class="navbar-nav me-auto mb-2 mb-lg-0">#}
-{#                <li class="nav-item">#}
-{#                    <a class="nav-link active" aria-current="page" href="#">Home</a>#}
-{#                </li>#}
-{##}
-{#                <li class="nav-item dropdown">#}
-{#                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"#}
-{#                       aria-expanded="false">#}
-{#                        Categories#}
-{#                    </a>#}
-{#                    <ul class="dropdown-menu">#}
-{#                        <li><a class="dropdown-item" href="#">Art objects &raquo;</a>#}
-{#                            <ul class="'dropdown-menu dropdown-submenu">#}
-{#                                <li>#}
-{#                                    <a class="dropdown-item" href="#">Add a new art object</a>#}
-{#                                </li>#}
-{#                                <li>#}
-{#                                    <a class="dropdown-item" href="#">Update article</a>#}
-{#                                </li>#}
-{#                            </ul>#}
-{#                        </li>#}
-{#                        <li><a class="dropdown-item" href="#">Clothes &raquo;</a></li>#}
-{#                        <ul class="'dropdown-menu dropdown-submenu">#}
-{#                            <li>#}
-{#                                <a class="dropdown-item" href="#">Add a new clothing item</a>#}
-{#                            </li>#}
-{#                        </ul>#}
-{#                        <ul class="'dropdown-menu dropdown-submenu">#}
-{#                            <li>#}
-{#                                <a class="dropdown-item" href="#">Update article</a>#}
-{#                            </li>#}
-{#                        </ul>#}
-{#                        <li><a class="dropdown-item" href="#">Jewelery &raquo;</a></li>#}
-{#                        <ul class="'dropdown-menu dropdown-submenu">#}
-{#                            <li>#}
-{#                                <a class="dropdown-item" href="#">Add new Jewelery</a>#}
-{#                            </li>#}
-{#                        </ul>#}
-{#                        <ul class="'dropdown-menu dropdown-submenu">#}
-{#                            <li>#}
-{#                                <a class="dropdown-item" href="#">Update article</a>#}
-{#                            </li>#}
-{#                        </ul>#}
-{#                        <li><a class="dropdown-item" href="#">Vintage Cars &raquo;</a></li>#}
-{#                        <ul class="'dropdown-menu dropdown-submenu">#}
-{#                            <li>#}
-{#                                <a class="dropdown-item" href="#">Add a new car</a>#}
-{#                            </li>#}
-{#                        </ul>#}
-{#                        <ul class="'dropdown-menu dropdown-submenu">#}
-{#                            <li>#}
-{#                                <a class="dropdown-item" href="#">Update article</a>#}
-{#                            </li>#}
-{#                        </ul>#}
-{#                    </ul>#}
-{#                </li>#}
-{##}
-{#                <form class="form-inline my-2 my-lg-0 me-2">#}
-{#                    <div class="input-group">#}
-{#                        <input class="form-control mr-sm-2" id="address-bar" type="search" placeholder="Search"#}
-{#                               aria-label="Search">#}
-{#                        <button class="btn btn-outline-secondary" type="submit">Search</button>#}
-{#                    </div>#}
-{#                </form>#}
-{##}
-{#                <a href="#" class="btn btn-outline-success me-2">Login</a>#}
-{#                <a href="#" class="btn btn-outline-secondary">Sign up</a>#}
-{#            </ul>#}
-{#        </div>#}
-{#    </div>#}
-{#</nav>#}
-<script>
-$(document).ready(function(){
-  $('.dropdown-submenu a.test').on("click", function(e){
-    $(this).next('ul').toggle();
-    e.stopPropagation();
-    e.preventDefault();
-  });
-});
-</script>
 </body>
 </html>

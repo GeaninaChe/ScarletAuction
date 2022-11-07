@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'home',
     'intro',
     'userextend',
+    'artobjects',
+    'cars',
+    'clothes',
+    'jewelery'
 ]
 
 MIDDLEWARE = [

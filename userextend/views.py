@@ -49,17 +49,17 @@ class AuthenticationNewForm(AuthenticationForm):
         if request.method == 'POST':
             form = AuthenticationForm(request, data=request.POST)
             if form.is_valid():
-                username = form.cleaned_data.get('username')
+                email_address = form.cleaned_data.get('email_address')
                 password = form.cleaned_data.get('password')
-                user = authenticate(username=username, password=password)
+                user = authenticate(email_address=email_address, password=password)
                 if user is not None:
                     login(request, user)
-                    messages.info(request, f'You are now logged in as {username}.')
+                    messages.info(request, f'You are now logged in as {email_address}.')
                     return redirect('homepage')
                 else:
-                    messages.error(request, 'Invalid username or password.')
+                    messages.error(request, 'Invalid email or password.')
             else:
-                messages.error(request, 'Invalid username or password.')
+                messages.error(request, 'Invalid email or password.')
         form = AuthenticationForm()
-        return render(request=request, template_name='home/../templates/userextend/login.html', context={'login_form': form})
+        return render(request=request, template_name='registration/login.html', context={'login_form': form})
 

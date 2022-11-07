@@ -9,11 +9,11 @@ from userextend.models import UserExtend
 class UserExtendForm(UserCreationForm): #sign up
     class Meta:
         model = UserExtend
-        fields = ['first_name', 'last_name', 'email_address', 'username', 'gender', 'birthday', 'account', 'phone']
+        fields = ['firstname', 'lastname', 'email_address', 'username', 'gender', 'birthday', 'account', 'phone']
 
         widgets = {
-            'first_name': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your first name'}),
-            'last_name': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your last name'}),
+            'firstname': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your first name'}),
+            'lastname': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your last name'}),
             'email_address': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your email'}),
             'username': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your username'}),
             'gender': Select(attrs={'class': 'form-control'}),
@@ -34,11 +34,11 @@ class AuthenticationNewForm(AuthenticationForm): #log in
 
     class Meta:
         model = UserExtend
-        fields = ['username', 'email']
+        fields = ['email_address', 'password']
 
         widgets = {
-            'username': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your username'}),
-            'email': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your email'}),
+            'email_address': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your email address'}),
+            'password': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your password'}),
         }
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
