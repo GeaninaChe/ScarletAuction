@@ -1,10 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block title %} Art Objects - {{ object.name }} {% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <br><br>
+                <div class="card text-center">
+                    <div class="card-header">
+                       Details about the product: {{ object }}
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ object }}</h5>
+                        <p class="card-text">Object Description {{ object.description}}</p>
+                        <p class="card-text">Bidding start price {{ object.start_price}}</p>
+                        <p class="card-text">Value at sale {{ object.final_price}}</p>
+                        <a href="#" class="btn btn-secondary">Go back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+{% endblock %}

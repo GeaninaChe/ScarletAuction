@@ -1,16 +1,10 @@
-from random import randint
-
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth.models import User
 from django.core.checks import messages
-from django.core.mail import send_mail, EmailMessage
+
 from django.shortcuts import redirect, render
-from django.template.loader import get_template
-from django.urls import reverse_lazy
 from django.views.generic import CreateView
 
-from ScarletAuction.settings import EMAIL_HOST_USER
 # from ScarletAuction.settings import EMAIL_HOST_USER
 from userextend.forms import UserExtendForm
 from userextend.models import UserExtend
@@ -63,4 +57,7 @@ class AuthenticationNewForm(AuthenticationForm):
                 messages.error(request, 'Invalid email or password.')
         form = AuthenticationForm()
         return render(request=request, template_name='registration/login.html', context={'login_form': form})
+
+
+
 
