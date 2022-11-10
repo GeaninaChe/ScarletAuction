@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Art Objects{% endblock title %}
+
+{% block content %}
+    {% for artobjects in artobjects_list %}
+        <div><h2><a href="">{{ artobjects.product_name }}</a></h2>
+        </div>
+    {% endfor %}
+
+{% endblock content %}

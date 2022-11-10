@@ -8,7 +8,7 @@
 
 <nav class="navbar navbar-expand-lg" style="background-color: rgba(0,198,139,0.48);">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Scarlet Auction</a>
+        <a class="navbar-brand" href="{% url 'homepage' %}">Scarlet Auction</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,10 +26,10 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-                        <li><a class="dropdown-item" href="#">Art objects &raquo;</a>
+                        <li><a class="dropdown-item" href="{% url 'artobjects' %}">Art objects &raquo;</a>
                             <ul class="'dropdown-menu dropdown-submenu">
                                 <li>
-                                    <a class="dropdown-item" href="#">Add a new art object</a>
+                                    <a class="dropdown-item" href="{% url 'artobjects' %}">Add a new art object</a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#">Update article</a>

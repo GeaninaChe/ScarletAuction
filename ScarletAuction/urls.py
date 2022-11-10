@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.contrib.auth import views
 from django.urls import path, include
 from userextend.forms import AuthenticationNewForm, PasswordResetNewForm, SetPasswordNewForm
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,8 +25,8 @@ urlpatterns = [
     path('', include('userextend.urls')),
     path("login/", views.LoginView.as_view(form_class=AuthenticationNewForm), name="login"),
     path('', include('django.contrib.auth.urls')),
+    path('artobjects/', include('artobjects.urls')),
     path('', include('cars.urls')),
-    path('', include('artobjects.urls')),
     path('', include('clothes.urls')),
     path('', include('jewelery.urls')),
     path("password_reset/", views.PasswordResetView.as_view(form_class=PasswordResetNewForm), name="password_reset"),

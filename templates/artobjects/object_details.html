@@ -1,0 +1,14 @@
+
+{% extends 'base.html' %}
+
+{% block title %}{{ object.title }}{% endblock title %}
+
+{% block content %}
+    <div class="object_details"><h2><a href="">{{ object.product_name }}</a></h2>
+        <p>Description: {{ object.description }}</p>
+        <p>Starting price: {{ object.starting_price }}</p>
+        <p>Current price: {{ object.current_price }}</p>
+        <p>Final price: {{ object.final_price }}</p>
+    </div>
+
+{% endblock content %}
