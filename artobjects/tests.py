@@ -27,7 +27,7 @@ class ArtObjectsTest(TestCase):
         response = self.client.get(reverse('objects_list'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'Mickey étonné')
-        self.assertTemplateUsed(response, 'artobjects/objects_list.html')
+        self.assertTemplateUsed(response, 'artobjects/update_objects.html')
 
 
     def test_object_details_view(self):
