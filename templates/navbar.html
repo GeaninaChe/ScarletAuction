@@ -26,13 +26,13 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-                        <li><a class="dropdown-item" href="{% url 'artobjects' %}">Art objects &raquo;</a>
+                        <li><a class="dropdown-item" href="{% url 'artobjects_list' %}">Art objects &raquo;</a>
                             <ul class="'dropdown-menu dropdown-submenu">
                                 <li>
-                                    <a class="dropdown-item" href="{% url 'artobjects' %}">Add a new art object</a>
+                                    <a class="dropdown-item" href="{% url 'create_object' %}">Add a new art object</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Update article</a>
+                                    <a class="dropdown-item" href="{% url 'update_objects' %}">Update article</a>
                                 </li>
                             </ul>
                         </li>
