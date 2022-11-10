@@ -1,41 +1,29 @@
 {% extends 'base.html' %}
-{% load static %}
-{% block title %} Art Objects {% endblock title %}
+{% block title %} Art Objects {% endblock %}
 
 {% block content %}
 
-    <br><br>
-    <div class="container-fluid">
-        <div class="row">
-
-            {% for artobjects in artobjects_list %}
-                <div class="col-sm-3">
-                    <div class="card" style="width: 18rem;">
-{#                        {% for image in static.images %}#}
-                            <img src="{% static 'images/fata.jpg' %}" class="card-img-top" alt="poza">
-{#                        {% endfor %}#}
-                        <div class="card-body">
-                            <h5 class="card-title">{{ artobjects.product_name}}</h5>
-                            <h6 class="card-title">{{ artobjects.description}}</h6>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">{{ artobjects.starting_price }}</li>
-                            <li class="list-group-item">{{ artobjects.current_price }}</li>
-                            <li class="list-group-item">{{ artobjects.final_price }}</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="btn btn-primary">Place bid</a>
-                            <a href="#" class="btn btn-success">Set max bid</a>
-                        </div>
-                    </div>
+    {% for artobjects in artobjects_list %}
+        <br><br>
+        <div class="container-fluid">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="fata">
+            <div class="card-header">
+                <h3 class="card-title">{{ artobjects.product_name }}</h3>
+                    <p class="card-text">{{ artobjects.description }}</p>
+                <ul class="list-group list-group-flush row">
+                    <li class="list-group-item">{{ artobjects.starting_price }} </li>
+                    <li class="list-group-item">{{ artobjects.current_price }} </li>
+                    <li class="list-group-item">{{ artobjects.final_price }} </li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Place bid</a>
+                    <a href="#" class="btn btn-success">Set max bid</a>
                 </div>
-            {% endfor %}
-
+            </div>
         </div>
-    </div>
-    <br>
+    {% endfor %}
+</div>
+{% endblock %}
 
-{% endblock content %}
 
-
-{#<p class="card-text text-center">{{ artobjects.description|slice:":35" }}</p>#}
