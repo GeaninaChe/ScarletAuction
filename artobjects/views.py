@@ -40,4 +40,3 @@ class ArtObjectsUpdateView (UpdateView):
     model = ArtObjects
     form_class = ArtObjectsForm
     success_url = reverse_lazy('artobjects_list')
-    permission_required = 'artobjects.update_objects'
