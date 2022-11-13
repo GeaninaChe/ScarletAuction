@@ -4,7 +4,7 @@ from django.urls import reverse_lazy
 import artobjects
 from .forms import ArtObjectsForm
 from .models import ArtObjects
-from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 
 class ArtObjectsView(ListView):
@@ -40,3 +40,9 @@ class ArtObjectsUpdateView(UpdateView):
     model = ArtObjects
     form_class = ArtObjectsForm
     success_url = reverse_lazy('artobjects_list')
+
+class ObjectDeleteView(DeleteView):
+    template_name = 'artobjects/delete_object.html'
+    model = ArtObjects
+    success_url = reverse_lazy('artobjects_list')
+
