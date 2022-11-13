@@ -1,29 +1,30 @@
 {% extends 'base.html' %}
 
-{% block title %} Update {{ all_details_artobjects }} {% endblock %}
+{% block title %} Art Objects {{ artobjects.product_name }} {{ artobjects.description }}
+    {{ artobjects.starting_price }} {{ artobjects.final_price }} {% endblock %}
 
 {% block content %}
-
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <div class="card">
+                <br><br>
+                <div class="card text-center">
                     <div class="card-header">
-                        <h3 class="text-center">Update {{ artobjects.product_name }} {{ artobjects.description }}
-                        {{ artobjects.starting-price }} {{ artobjects.final_price }}</h3>
+                        Details about the product: {{ artobjects }}
                     </div>
-                    <form method="post">
-                        {% csrf_token %}
-                        <div class="card-body">
-                            {{ form.as_p }}
-                        </div>
-                        <div class="card-footer">
-                            <button type="submit" class="btn btn-success">Update</button>
-                        </div>
-                    </form>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ artobjects.product_name }}</h5>
+                        <p class="card-text">Description: {{ artobjects.description }}</p>
+                        <p class="card-text">Starting price: {{ artobjects.starting_price }}</p>
+                        <p class="card-text">Final price: {{ artobjects.final_price }}</p>
+
+                        <a href="{% url 'artobjects_list' %}" class="btn btn-secondary">Go back</a>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
+
 
 {% endblock %}
