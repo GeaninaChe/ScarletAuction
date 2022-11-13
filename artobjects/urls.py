@@ -1,9 +1,12 @@
 from django.urls import path
-from .views import ArtObjectsView, ArtObjectsDetailView
+
+from . import views
+from .views import ArtObjectsView, ArtObjectsDetailView, CreateArtObjectsView
 
 urlpatterns = [
-    path('', ArtObjectsView.as_view(), name='artobjects_list'),
+    # path('', ArtObjectsView.as_view(), name='artobjects_list'),
+    path('artobjects-list/', views.ArtObjectsView.as_view(), name='artobjects_list'),
     path('<int:pk>', ArtObjectsView.as_view(), name='artobjects_detail'),
-    path('', ArtObjectsView.as_view(), name='create_object'),
+    path('', CreateArtObjectsView.as_view(), name='create_object'),
     path('', ArtObjectsDetailView.as_view(), name='update_objects')
 ]
