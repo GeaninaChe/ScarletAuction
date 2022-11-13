@@ -21,21 +21,21 @@ class CreateArtObjectsView(CreateView):
     template_name = 'artobjects/create_object.html'
     success_url = reverse_lazy('artobjects_list')
 
-    def get_context_data(self, **kwargs):
-        data = super(CreateArtObjectsView, self).get_context_data(**kwargs)
-        artobjects = ArtObjects.objects.all()
-        data['all_objects'] = artobjects
-
-        return data
-
 
 class ArtObjectsDetailView(DetailView):
     model = ArtObjects
     context_object_name = 'artobjects.description'
     template_name = 'artobjects/object_details.html'
 
+    def get_context_data(self, **kwargs):
+        data = super().get_context_data(**kwargs)
+        all_details_artobjects = ArtObjects.objects.filter(artobjects_id=self.kwargs['pk'])
+        data['all_details_artobjects'] = all_details_artobjects
 
-class ArtObjectsUpdateView (UpdateView):
+        return data
+
+
+class ArtObjectsUpdateView(UpdateView):
     template_name = 'artobjects/update_objects.html'
     model = ArtObjects
     form_class = ArtObjectsForm
