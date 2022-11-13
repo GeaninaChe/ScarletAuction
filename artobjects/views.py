@@ -41,6 +41,7 @@ class ArtObjectsUpdateView(UpdateView):
     form_class = ArtObjectsForm
     success_url = reverse_lazy('artobjects_list')
 
+
 class ObjectDeleteView(DeleteView):
     template_name = 'artobjects/delete_object.html'
     model = ArtObjects
