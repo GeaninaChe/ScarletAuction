@@ -1,30 +1,28 @@
 {% extends 'base.html' %}
 
-{% block title %} Art Objects {{ artobjects.product_name }} {{ artobjects.description }}
-    {{ artobjects.starting_price }} {{ artobjects.final_price }} {% endblock %}
+{% block title %} Art Objects {{ artobjects.product_name }} {% endblock %}
 
 {% block content %}
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 offset-md-3">
+                <a href="#"><img src="https://gomagcdn.ro/domains/lotusland.ro/files/product/original/vaza-decorativa-face-sticla-multicolor-30x47x10-5-cm-13448-9821.jpg" class="img-fluid flex-center"></a>
                 <br><br>
                 <div class="card text-center">
                     <div class="card-header">
-                        Details about the product: {{ artobjects }}
+                        Details about the product: {{ object }}
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">{{ artobjects.product_name }}</h5>
-                        <p class="card-text">Description: {{ artobjects.description }}</p>
-                        <p class="card-text">Starting price: {{ artobjects.starting_price }}</p>
-                        <p class="card-text">Final price: {{ artobjects.final_price }}</p>
+                        <h5 class="card-title">{{ object.product_name }}</h5>
+                        <p class="card-text">Description: {{ object.description }}</p>
+                        <p class="card-text">Starting price: {{ object.starting_price }}</p>
+                        <p class="card-text">Final price: {{ object.final_price }}</p>
 
                         <a href="{% url 'artobjects_list' %}" class="btn btn-secondary">Go back</a>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-
 
 {% endblock %}

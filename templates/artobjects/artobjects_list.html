@@ -22,9 +22,9 @@
                                     Actions
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{% url 'update_objects' %}">Update</a>
-                                        <a class="dropdown-item" href="{% url 'delete_object'%}">Delete</a>
-                                        <a class="dropdown-item" href="{% url 'object_details' %}">View details</a>
+                                    <li><a class="dropdown-item" href="{% url 'update_objects' object.id %}">Update</a>
+                                        <a class="dropdown-item" href="{% url 'delete_object' object.id %}">Delete</a>
+                                        <a class="dropdown-item" href="{% url 'object_details' object.id %}">View details</a>
                                     </li>
                                 </ul>
                             </div>

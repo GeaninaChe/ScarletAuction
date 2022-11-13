@@ -1,8 +1,7 @@
 <{% extends 'base.html' %}
 
 
-{% block title %} Delete {{ artobjects.product_name }} {{ artobjects.description }}
-                            {{ artobjects.starting_price }} {{ artobjects.final_price}} {% endblock %}
+{% block title %} Delete {{ artobjects.product_name }} {% endblock %}
 
 {% block content %}
 
@@ -18,7 +17,7 @@
                         </div>
                         <div class="card-footer text-center">
                             <button type="submit" class="btn btn-success">Yes</button>
-                            <a href="{% url 'list-of-students' %}" class="btn btn-secondary">No</a>
+                            <a href="{% url 'artobjects_list' %}" class="btn btn-secondary">No</a>
                         </div>
                     </form>
                 </div>

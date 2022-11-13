@@ -28,10 +28,10 @@
 {#                    </div>#}
 {#                    <br>#}
 {##}
-                    {#                    <div class="custom-file">#}
-                    {#                        <input type="file" class="custom-file-input" id="validatedCustomFile" required>#}
-                    {#                        <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>#}
-                    {#                        <div class="invalid-feedback">Example invalid custom file feedback</div>#}
+{#                    <div class="custom-file">#}
+{#                        <input type="file" class="custom-file-input" id="validatedCustomFile" required>#}
+{#                        <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>#}
+{#                        <div class="invalid-feedback">Example invalid custom file feedback</div>#}
 {#                    <div class="card-footer text-center">#}
 {#                        <button type="submit" class="btn btn-primary my-1" href="{% url 'homepage' %}">Create</button>#}
 {#                    </div>#}
@@ -48,7 +48,7 @@
 
 {% block content %}
 
-        <div class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <br><br>
@@ -59,10 +59,10 @@
                     <form method="post">
                         {% csrf_token %}
                         <div class="card-body">
-                        {{ form.as_p }}
+                            {{ form.as_p }}
                         </div>
                         <div class="card-footer text-center">
-                            <button type="submit" class="btn btn-primary my-1" href="{% url 'artobjects_list'%}">Create</button>
+                            <button type="submit" class="btn btn-primary my-1">Create</button>
                         </div>
                     </form>
                 </div>
