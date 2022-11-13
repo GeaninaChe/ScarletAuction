@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="96ab41c0-f62f-473e-bdbe-a4568380fd9c" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/artobjects/artobjects_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/artobjects/artobjects_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/artobjects/create_object.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/artobjects/create_object.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,6 +186,8 @@
       <workItem from="1668112270115" duration="28000" />
       <workItem from="1668112962698" duration="13000" />
       <workItem from="1668113005951" duration="3232000" />
+      <workItem from="1668116384821" duration="256000" />
+      <workItem from="1668351821331" duration="2961000" />
     </task>
     <task id="LOCAL-00001" summary="Navbar update + search inline :D">
       <created>1666643505655</created>
@@ -306,7 +308,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668115773638</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1668116447939</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668116447939</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1668116625258</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1668116625258</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
