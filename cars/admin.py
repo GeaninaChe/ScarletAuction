@@ -1,3 +1,9 @@
 from django.contrib import admin
+from .models import Car
 
-# Register your models here.
+
+class CarAdmin(admin.ModelAdmin):
+    list_display = ("product_name", "description", "starting_price", "final_price")
+
+
+admin.site.register(Car, CarAdmin)
