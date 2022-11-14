@@ -1,3 +1,9 @@
 from django.contrib import admin
+from .models import Jewelery
 
-# Register your models here.
+
+class JeweleryAdmin(admin.ModelAdmin):
+    list_display = ("product_name", "description", "starting_price", "final_price")
+
+
+admin.site.register(JeweleryAdmin, JeweleryAdmin)

@@ -29,8 +29,8 @@ class ClothesDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         data = super().get_context_data(**kwargs)
-        all_details_artobjects = Clothes.objects.filter(product_name=self.kwargs['pk'])
-        data['all_details_artobjects'] = all_details_artobjects
+        all_details_clothes = Clothes.objects.filter(product_name=self.kwargs['pk'])
+        data['all_details_clothes'] = all_details_clothes
 
         return data
 
