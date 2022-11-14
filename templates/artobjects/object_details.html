@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static%}
 
 {% block title %} Art Objects {{ artobjects.product_name }} {% endblock %}
 
@@ -6,12 +7,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <a href="#"><img src="https://gomagcdn.ro/domains/lotusland.ro/files/product/original/vaza-decorativa-face-sticla-multicolor-30x47x10-5-cm-13448-9821.jpg" class="img-fluid flex-center"></a>
+                <a href="#"><img src="{% static 'images/Vaza Sticla fata.jpg' %}" alt="Car" class="img-fluid flex-center"></a>
                 <br><br>
                 <div class="card text-center">
-                    <div class="card-header">
-                        Details about the product: {{ object }}
-                    </div>
                     <div class="card-body">
                         <h5 class="card-title">{{ object.product_name }}</h5>
                         <p class="card-text">Description: {{ object.description }}</p>
@@ -25,5 +23,6 @@
             </div>
         </div>
     </div>
+    <br><br>
 
 {% endblock %}

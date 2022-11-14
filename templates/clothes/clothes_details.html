@@ -1,25 +1,22 @@
 {% extends 'base.html' %}
-
 {% load static %}
 
-{% block title %} Cars {{ car.product_name}} {% endblock %}
+{% block title %} Clothes {{ clothes.product_name}} {% endblock %}
 
 {% block content %}
-    <br><br>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <a href="#"><img src="{% static 'images/Triumph Car.jpg' %}" alt="Car" class="img-fluid flex-center"></a>
+                <a href="#"><img src="{% static 'images/Salvatorre Ferragamo Winter Coat.jpg' %}" alt="Car" class="img-fluid flex-center"></a>
                 <br><br>
                 <div class="card text-center">
                     <div class="card-body">
-                        <br>
                         <h5 class="card-title">{{ object.product_name }}</h5>
                         <p class="card-text">Description: {{ object.description }}</p>
                         <p class="card-text">Starting price: {{ object.starting_price }}</p>
                         <p class="card-text">Final price: {{ object.final_price }}</p>
 
-                        <a href="{% url 'cars_list' %}" class="btn btn-outline-secondary">Go back</a>
+                        <a href="{% url 'clothes_list' %}" class="btn btn-outline-secondary">Go back</a>
                         <a href="#" class="btn btn-outline-success">Place a bid</a>
                     </div>
                 </div>

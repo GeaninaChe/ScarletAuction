@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %} Update {{ car }} {% endblock %}
+
+{% block content %}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-center">Update {{ car.product_name }} {{ car.description }}
+                            {{ car.starting_price }} {{ car.final_price }}</h3>
+                    </div>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="card-body">
+                            {{ form.as_p }}
+                        </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-success">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

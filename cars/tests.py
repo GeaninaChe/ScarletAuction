@@ -20,7 +20,7 @@ class CarTest(TestCase):
         self.assertEqual(f'{self.car.final_price}', '')
 
     def test_car_list_view(self):
-        response = self.client.get(reverse('cars_listt'))
+        response = self.client.get(reverse('cars_list'))
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, '')
         self.assertTemplateUsed(response, 'cars/update_car.html')
