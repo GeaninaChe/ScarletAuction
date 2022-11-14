@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %} Update {{ artobjects }} {% endblock %}
+{% block title %} Update {{ jewelery }} {% endblock %}
 
 {% block content %}
 <br>
@@ -9,8 +9,8 @@
             <div class="col-md-6 offset-md-3">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="text-center">Update {{ artobjects.product_name }} {{ artobjects.description }}
-                            {{ artobjects.starting_price }} {{ artobjects.final_price }}</h3>
+                        <h3 class="text-center">Update {{ jewelery.product_name }} {{ jewelery.description }}
+                            {{ jewelery.starting_price }} {{ jewelery.final_price }}</h3>
                     </div>
                     <form method="post">
                         {% csrf_token %}

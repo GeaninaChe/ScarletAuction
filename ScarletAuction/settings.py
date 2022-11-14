@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'artobjects',
     'cars',
     'clothes',
-    'jewelery',
+    'jewellery',
 ]
 
 MIDDLEWARE = [

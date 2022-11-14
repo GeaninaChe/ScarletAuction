@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %} Jewelery List {% endblock title %}
+
+{% block content %}
+    <br><br>
+    <div class="container-fluid">
+        <div class="row">
+            {% for article in jewelery_list %}
+                <div class="col-md-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title text-center">{{ jewel.product_name }}</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center">{{ jewel.description|slice:":50" }}</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    Actions
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{% url 'update_jewelery' jewel.id %}">Update</a>
+                                        <a class="dropdown-item" href="{% url 'delete_jewelery' jewel.id %}">Delete</a>
+                                        <a class="dropdown-item" href="{% url 'jewelery_details' jewel.id %}">View details</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

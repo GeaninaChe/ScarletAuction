@@ -27,7 +27,7 @@ urlpatterns = [
     path('', include('django.contrib.auth.urls')),
     path('artobjects/', include('artobjects.urls')),
     path('', include('clothes.urls')),
-    path('', include('jewelery.urls')),
+    path('', include('jewellery.urls')),
     path('', include('cars.urls')),
     path("password_reset/", views.PasswordResetView.as_view(form_class=PasswordResetNewForm), name="password_reset"),
 ]

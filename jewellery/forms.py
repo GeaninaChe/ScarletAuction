@@ -1,12 +1,12 @@
 from django import forms
 from django.forms import TextInput, Textarea, DateInput
 
-from jewelery.models import Jewelery
+from jewellery.models import Jewellery
 
 
-class JeweleryForm(forms.ModelForm):
+class JewelleryForm(forms.ModelForm):
     class Meta:
-        model = Jewelery
+        model = Jewellery
         # fields = '__all__'
         fields = ['product_name', 'description', 'starting_price', 'final_price']
 

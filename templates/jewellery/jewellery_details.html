@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %} Clothes {{ clothes.product_name}} {% endblock %}
+{% block title %} Jewelery {{ jewelery.product_name}} {% endblock %}
 
 {% block content %}
     <br><br>
@@ -17,7 +17,7 @@
                         <p class="card-text">Starting price: {{ object.starting_price }}</p>
                         <p class="card-text">Final price: {{ object.final_price }}</p>
 
-                        <a href="{% url 'clothes_list' %}" class="btn btn-outline-secondary">Go back</a>
+                        <a href="{% url 'jewelery_list' %}" class="btn btn-outline-secondary">Go back</a>
                         <a href="#" class="btn btn-outline-success">Place a bid</a>
                     </div>
                 </div>

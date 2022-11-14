@@ -2,27 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96ab41c0-f62f-473e-bdbe-a4568380fd9c" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change afterPath="$PROJECT_DIR$/clothes/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clothes/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/Salvatorre Ferragamo Winter Coat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/Vaza Sticla fata.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/clothes/clothes_details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/clothes/clothes_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/clothes/create_clothes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/clothes/delete_clothes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/clothes/update_clothes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jewellery/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jewellery/migrations/0002_rename_jewelery_jewellery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/jewellery/create_jewellery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/jewellery/delete_jewellery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/jewellery/jewellery_details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/jewellery/jewellery_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/jewellery/update_jewellery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cars/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cars/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cars/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/cars/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clothes/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/clothes/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clothes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/clothes/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clothes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/clothes/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScarletAuction/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScarletAuction/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScarletAuction/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScarletAuction/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cars/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cars/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clothes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/clothes/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jewelery/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/jewellery/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jewelery/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/jewellery/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jewelery/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/jewellery/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jewelery/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/jewellery/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jewelery/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/jewellery/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jewelery/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/jewellery/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jewelery/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/jewellery/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jewelery/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/jewellery/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jewelery/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/jewellery/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/artobjects/object_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/artobjects/object_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cars/car_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cars/car_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/clothes/clothes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cars/update_car.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/clothes/clothes_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/clothes/clothes_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/clothes/delete_clothes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/clothes/delete_clothes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/jewelery/jewelery.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/our_story.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +227,7 @@
       <workItem from="1668360190180" duration="2503000" />
       <workItem from="1668363138169" duration="12253000" />
       <workItem from="1668443017901" duration="4726000" />
-      <workItem from="1668447795642" duration="3029000" />
+      <workItem from="1668447795642" duration="5256000" />
     </task>
     <task id="LOCAL-00001" summary="Navbar update + search inline :D">
       <created>1666643505655</created>
@@ -474,7 +481,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668447742881</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1668450872071</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1668450872071</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1668451473703</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1668451473703</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

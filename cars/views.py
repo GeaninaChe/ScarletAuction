@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 
-import artobjects
+
 from .forms import CarForm
 from .models import Car
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView

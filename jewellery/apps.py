@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class JeweleryConfig(AppConfig):
+class JewelleryConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'jewelery'
+    name = 'jewellery'
