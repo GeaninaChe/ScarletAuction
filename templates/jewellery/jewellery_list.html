@@ -1,19 +1,19 @@
 {% extends 'base.html' %}
 
-{% block title %} Jewelery List {% endblock title %}
+{% block title %} Jewellery List {% endblock title %}
 
 {% block content %}
     <br><br>
     <div class="container-fluid">
         <div class="row">
-            {% for article in jewelery_list %}
+            {% for article in jewellery_list %}
                 <div class="col-md-2">
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="card-title text-center">{{ jewel.product_name }}</h5>
+                            <h5 class="card-title text-center">{{ article.product_name }}</h5>
                         </div>
                         <div class="card-body">
-                            <p class="card-text text-center">{{ jewel.description|slice:":50" }}</p>
+                            <p class="card-text text-center">{{ article.description|slice:":50" }}</p>
                         </div>
                         <div class="card-footer text-center">
                             <div class="dropdown">
@@ -22,9 +22,9 @@
                                     Actions
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{% url 'update_jewelery' jewel.id %}">Update</a>
-                                        <a class="dropdown-item" href="{% url 'delete_jewelery' jewel.id %}">Delete</a>
-                                        <a class="dropdown-item" href="{% url 'jewelery_details' jewel.id %}">View details</a>
+                                    <li><a class="dropdown-item" href="{% url 'update_jewellery' article.id %}">Update</a>
+                                        <a class="dropdown-item" href="{% url 'delete_jewellery' article.id %}">Delete</a>
+                                        <a class="dropdown-item" href="{% url 'jewellery_details' article.id %}">View details</a>
                                     </li>
                                 </ul>
                             </div>

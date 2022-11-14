@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %} Jewelery {{ jewelery.product_name}} {% endblock %}
+{% block title %} Jewellery {{ jewellery.product_name}} {% endblock %}
 
 {% block content %}
     <br><br>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <a href="#"><img src="{% static 'images/Salvatorre Ferragamo Winter Coat.jpg' %}" alt="Car" class="img-fluid flex-center"></a>
+                <a href="#"><img src="{% static 'images/Emerald Ring.jpg' %}" alt="Car" class="img-fluid flex-center"></a>
                 <br><br>
                 <div class="card text-center">
                     <div class="card-body">
@@ -17,7 +17,7 @@
                         <p class="card-text">Starting price: {{ object.starting_price }}</p>
                         <p class="card-text">Final price: {{ object.final_price }}</p>
 
-                        <a href="{% url 'jewelery_list' %}" class="btn btn-outline-secondary">Go back</a>
+                        <a href="{% url 'jewellery_list' %}" class="btn btn-outline-secondary">Go back</a>
                         <a href="#" class="btn btn-outline-success">Place a bid</a>
                     </div>
                 </div>
