@@ -2,7 +2,6 @@ from django.db import models
 from django.urls import reverse
 
 
-# Create your models here.
 class ArtObjects(models.Model):
     product_name = models.CharField(max_length=100)
     description = models.CharField(max_length=500)
