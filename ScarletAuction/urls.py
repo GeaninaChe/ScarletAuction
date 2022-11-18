@@ -30,4 +30,5 @@ urlpatterns = [
     path('', include('jewellery.urls')),
     path('', include('cars.urls')),
     path("password_reset/", views.PasswordResetView.as_view(form_class=PasswordResetNewForm), name="password_reset"),
+    path('orders/', include('shopping_cart.urls')),
 ]

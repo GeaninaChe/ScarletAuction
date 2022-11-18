@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96ab41c0-f62f-473e-bdbe-a4568380fd9c" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change afterPath="$PROJECT_DIR$/shopping_cart/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopping_cart/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopping_cart/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopping_cart/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopping_cart/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopping_cart/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopping_cart/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shopping_cart/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/orders/purchase.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artobjects/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/artobjects/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/artobjects/create_object.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/artobjects/create_object.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScarletAuction/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScarletAuction/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScarletAuction/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScarletAuction/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/artobjects/object_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/artobjects/object_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cars/car_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cars/car_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/clothes/clothes_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/clothes/clothes_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/jewellery/jewellery_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/jewellery/jewellery_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip/_vendor/rich/_emoji_codes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip/_vendor/rich/_emoji_codes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -62,11 +77,11 @@
       <recent name="C:\ScarletAuction\static\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Geanina\PycharmProjects\ScarletAuction\templates\shopping_cart" />
       <recent name="C:\Users\Geanina\PycharmProjects\ScarletAuction\static\images" />
       <recent name="C:\Users\Geanina\PycharmProjects\ScarletAuction\static" />
       <recent name="C:\Users\Geanina\PycharmProjects\ScarletAuction\templates" />
       <recent name="C:\Users\Geanina\PycharmProjects\ScarletAuction\venv\Lib\site-packages\_distutils_hack" />
-      <recent name="C:\ScarletAuction" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.ScarletAuction">
@@ -133,6 +148,28 @@
     <configuration name="update_car.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ScarletAuction/templates/cars/update_car.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ScarletAuction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/shopping_cart" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shopping_cart/models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ScarletAuction" type="Python.DjangoServer" factoryName="Django server">
       <module name="ScarletAuction" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,9 +200,11 @@
       <item itemvalue="Django tests.Test: artobjects.tests.ArtObjectsTest" />
       <item itemvalue="Django tests.Test: artobjects.tests.ArtObjectsTest.test_object_details_view" />
       <item itemvalue="JavaScript Debug.update_car.html" />
+      <item itemvalue="Python.models" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.models" />
         <item itemvalue="JavaScript Debug.update_car.html" />
         <item itemvalue="Django tests.Test: artobjects.tests.ArtObjectsTest.test_object_details_view" />
         <item itemvalue="Django tests.Test: artobjects.tests.ArtObjectsTest" />
@@ -202,7 +241,8 @@
       <workItem from="1668360190180" duration="2503000" />
       <workItem from="1668363138169" duration="12253000" />
       <workItem from="1668443017901" duration="4726000" />
-      <workItem from="1668447795642" duration="11840000" />
+      <workItem from="1668447795642" duration="12603000" />
+      <workItem from="1668790934007" duration="6415000" />
     </task>
     <task id="LOCAL-00001" summary="Navbar update + search inline :D">
       <created>1666643505655</created>
@@ -498,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668456346155</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1668463172719</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1668463172719</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,6 +572,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ScarletAuction$Test__artobjects_tests.coverage" NAME="Test: artobjects.tests Coverage Results" MODIFIED="1668100580252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/ScarletAuction$models.coverage" NAME="models Coverage Results" MODIFIED="1668795119056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shopping_cart" />
     <SUITE FILE_PATH="coverage/ScarletAuction$Test__artobjects_tests_ArtObjectsTest.coverage" NAME="Test: artobjects.tests.ArtObjectsTest Coverage Results" MODIFIED="1668100694531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/ScarletAuction$Test__.coverage" NAME="Test:  Coverage Results" MODIFIED="1666718096937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/ScarletAuction$Test__userextend.coverage" NAME="Test: userextend Coverage Results" MODIFIED="1666717692636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
