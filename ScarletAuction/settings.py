@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'clothes',
     'jewellery',
     'shopping_cart',
+
 ]
 
 MIDDLEWARE = [
@@ -141,3 +142,4 @@ EMAIL_HOST_USER = 'thebestgroupro29@horiascurtu.ro'
 EMAIL_HOST_PASSWORD = 'Django1234!'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
