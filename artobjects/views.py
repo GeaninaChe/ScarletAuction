@@ -47,8 +47,4 @@ class ObjectDeleteView(DeleteView):
     model = ArtObjects
     success_url = reverse_lazy('artobjects_list')
 
-class ObjectDeleteView(DeleteView):
-    template_name = 'artobjects/delete_object.html'
-    model = ArtObjects
-    success_url = reverse_lazy('artobjects_list')
 

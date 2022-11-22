@@ -22,9 +22,13 @@
                                     Actions
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{% url 'update_car' car.id %}">Update</a>
+                                    {% if request.user.is_authenticated %}
+                                        <li><a class="dropdown-item" href="{% url 'update_car' car.id %}">Update</a>
                                         <a class="dropdown-item" href="{% url 'delete_car' car.id %}">Delete</a>
                                         <a class="dropdown-item" href="{% url 'car_details' car.id %}">View details</a>
+                                    {% else %}
+                                        <a class="dropdown-item" href="{% url 'car_details' car.id %}">View details</a>
+                                    {% endif %}
                                     </li>
                                 </ul>
                             </div>

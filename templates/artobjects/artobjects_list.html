@@ -22,10 +22,18 @@
                                     Actions
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="{% url 'update_objects' object.id %}">Update</a>
-                                        <a class="dropdown-item" href="{% url 'delete_object' object.id %}">Delete</a>
-                                        <a class="dropdown-item" href="{% url 'object_details' object.id %}">View details</a>
-                                    </li>
+                                    {% if request.user.is_authenticated %}
+                                        <li><a class="dropdown-item"
+                                               href="{% url 'update_objects' object.id %}">Update</a>
+                                            <a class="dropdown-item"
+                                               href="{% url 'delete_object' object.id %}">Delete</a>
+                                            <a class="dropdown-item" href="{% url 'object_details' object.id %}">View
+                                                details</a>
+                                        {% else %}
+                                            <a class="dropdown-item" href="{% url 'object_details' object.id %}">View
+                                                details</a>
+                                        </li>
+                                    {% endif %}
                                 </ul>
                             </div>
                         </div>

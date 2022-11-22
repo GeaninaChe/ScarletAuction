@@ -1,7 +1,7 @@
 
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, PasswordResetForm, SetPasswordForm
 from django.contrib.auth.models import User
-from django.forms import TextInput, DateInput, Select
+from django.forms import TextInput, DateInput, Select, CheckboxInput
 
 from userextend.models import UserExtend
 
@@ -9,7 +9,7 @@ from userextend.models import UserExtend
 class UserExtendForm(UserCreationForm): #sign up
     class Meta:
         model = UserExtend
-        fields = ['firstname', 'lastname', 'email_address', 'username', 'gender', 'birthday', 'account', 'phone']
+        fields = ['firstname', 'lastname', 'email_address', 'username', 'gender', 'birthday', 'seller','buyer', 'phone']
 
         widgets = {
             'firstname': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your first name'}),
@@ -18,7 +18,6 @@ class UserExtendForm(UserCreationForm): #sign up
             'username': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your username'}),
             'gender': Select(attrs={'class': 'form-control'}),
             'birthday': DateInput(attrs={'class': 'form-control', 'type': 'date'}),
-            'account': Select(attrs={'class': 'form-control'}),
             'phone': TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your phone number'}),
         }
 

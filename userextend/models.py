@@ -5,7 +5,6 @@ from django.db import models
 class UserExtend(User):
 
     gender_options = (('male', 'Male'), ('female', 'Female'), ('other', 'Other'))
-    account_options = (('buyer', 'Buyer'), ('seller', 'Seller'))
 
     firstname = models.CharField(max_length=20, null=False)
     lastname = models.CharField(max_length=20, null=False)
@@ -13,7 +12,8 @@ class UserExtend(User):
     phone = models.CharField(max_length=10)
     birthday = models.DateField(null=True, blank=True)
     gender = models.CharField(choices=gender_options, max_length=6, null=True)
-    account = models.CharField(choices=account_options, max_length=6, null=True)
+    seller = models.BooleanField(default=False)
+    buyer = models.BooleanField(default=False)
 
 
     def __str__(self):
