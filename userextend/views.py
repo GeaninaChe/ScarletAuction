@@ -1,13 +1,26 @@
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.forms import AuthenticationForm
 from django.core.checks import messages
-
+from django.urls import reverse_lazy
 from django.shortcuts import redirect, render
-from django.views.generic import CreateView
+from django.views.generic import CreateView,ListView, UpdateView, DeleteView, DetailView
 
 # from ScarletAuction.settings import EMAIL_HOST_USER
 from userextend.forms import UserExtendForm
 from userextend.models import UserExtend
+
+from django.contrib.auth.decorators import login_required, permission_required
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+
+
+from artobjects.forms import ArtObjectsForm
+from cars.forms import CarForm
+from clothes.forms import ClothesForm
+from jewellery.forms import JewelleryForm
+from artobjects.models import ArtObjects
+from cars.models import Car
+from clothes.models import Clothes
+from jewellery.models import Jewellery
 
 
 class UserCreateView(CreateView):
@@ -35,6 +48,7 @@ class UserCreateView(CreateView):
 
         return redirect('homepage')
 
+
 class AuthenticationNewForm(AuthenticationForm):
     template_name = 'userextend/login.html'
     model = UserExtend
@@ -58,6 +72,35 @@ class AuthenticationNewForm(AuthenticationForm):
         form = AuthenticationForm()
         return render(request=request, template_name='registration/login.html', context={'login_form': form})
 
+
+class ArtObjectsAddView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    template_name = 'artobjects/create_object.html'
+    model = ArtObjects
+    form_class = ArtObjectsForm
+    success_url = reverse_lazy('artobjects_lists')
+    permission_required = 'artobjects.add_artobjects'
+
+
+class ArtObjectsUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+    template_name = 'artobjects/update_objects.html'
+    model = ArtObjects
+    form_class = ArtObjectsForm
+    success_url = reverse_lazy('artobjects_lists')
+    permission_required = 'artobjects.change_artobjects'
+
+
+class ArtObjectsDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
+    template_name = 'artobjects/delete_object.html'
+    model = ArtObjects
+    success_url = reverse_lazy('artobjects_list')
+    permission_required = 'artobjects.delete_artobjects'
+
+
+@login_required
+@permission_required('seller.delete')
+def delete_seller_object(request, pk):
+    ArtObjects.objects.filter(id=pk).delete()
+    return redirect('artobjects_list')
 
 
 

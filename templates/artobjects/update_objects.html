@@ -17,9 +17,11 @@
                         <div class="card-body">
                             {{ form.as_p }}
                         </div>
+                        {% if user.account == seller %}
                         <div class="card-footer">
                             <button type="submit" class="btn btn-success">Update</button>
                         </div>
+                        {% endif %}
                     </form>
                 </div>
             </div>
